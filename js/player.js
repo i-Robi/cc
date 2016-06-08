@@ -10254,7 +10254,7 @@ $export.P = 8;   // proto
 $export.B = 16;  // bind
 $export.W = 32;  // wrap
 $export.U = 64;  // safe
-$export.R = 128; // real proto method for `library` 
+$export.R = 128; // real proto method for `library`
 module.exports = $export;
 },{"./_core":97,"./_ctx":99,"./_global":108,"./_hide":110}],106:[function(require,module,exports){
 module.exports = function(exec){
@@ -12690,7 +12690,7 @@ Delegate.prototype.handle = function(event) {
   root = this.rootElement;
 
   phase = event.eventPhase || ( event.target !== event.currentTarget ? 3 : 2 );
-  
+
   switch (phase) {
     case 1: //Event.CAPTURING_PHASE:
       listenerList = this.listenerMap[1][type];
@@ -15809,7 +15809,7 @@ var platform = require('platform');
 /**
  * Gets the current local time in seconds.
  * Uses `window.performance.now()` if available, and `Date.now()` otherwise.
- * 
+ *
  * @return {number}
  */
 function getLocalTime() {
@@ -16079,7 +16079,7 @@ var DeviceMotionModule = (function (_InputModule) {
     /**
      * `'devicemotion'` event callback.
      * This method emits an event with the raw `'devicemotion'` values, and emits
-     * events with the unified `accelerationIncludingGravity`, `acceleration`, 
+     * events with the unified `accelerationIncludingGravity`, `acceleration`,
      * and / or `rotationRate` values if they are required.
      *
      * @param {DeviceMotionEvent} e - `'devicemotion'` event the values are calculated from.
@@ -16355,7 +16355,7 @@ var DeviceMotionModule = (function (_InputModule) {
 
     /**
      * Adds a listener to this module.
-     * 
+     *
      * @param {function} listener - Listener to add.
      */
   }, {
@@ -16411,7 +16411,7 @@ var platform = require('platform');
 
 /**
  * Converts degrees to radians.
- * 
+ *
  * @param {number} deg - Angle in degrees.
  * @return {number}
  */
@@ -16421,7 +16421,7 @@ function degToRad(deg) {
 
 /**
  * Converts radians to degrees.
- * 
+ *
  * @param {number} rad - Angle in radians.
  * @return {number}
  */
@@ -16431,7 +16431,7 @@ function radToDeg(rad) {
 
 /**
  * Normalizes a 3 x 3 matrix.
- * 
+ *
  * @param {number[]} m - Matrix to normalize, represented by an array of length 9.
  * @return {number[]}
  */
@@ -16448,7 +16448,7 @@ function normalize(m) {
  * - `alpha` is in [0; +360[;
  * - `beta` is in [-180; +180[;
  * - `gamma` is in [-90; +90[.
- * 
+ *
  * @param {number[]} eulerAngle - Euler angle to unify, represented by an array of length 3 (`[alpha, beta, gamma]`).
  * @see {@link http://www.w3.org/TR/orientation-event/}
  */
@@ -16544,7 +16544,7 @@ function unify(eulerAngle) {
  * - `alpha` is in [0; +360[;
  * - `beta` is in [-90; +90[;
  * - `gamma` is in [-180; +180[.
- * 
+ *
  * @param {number[]} eulerAngle - Euler angle to convert, represented by an array of length 3 (`[alpha, beta, gamma]`).
  */
 function unifyAlt(eulerAngle) {
@@ -16973,7 +16973,7 @@ var DeviceOrientationModule = (function (_InputModule) {
 
     /**
      * Adds a listener to this module.
-     * 
+     *
      * @param {function} listener - Listener to add.
      */
   }, {
@@ -17551,7 +17551,7 @@ module.exports = InputModule;
  * `MotionInput` singleton.
  * The `MotionInput` singleton allows to initialize motion events
  * and to listen to them.
- * 
+ *
  * @class MotionInput
  */
 
@@ -17688,7 +17688,7 @@ module.exports = new MotionInput();
  * ```
  * const input = require('motion-input');
  * const requiredEvents = ['acceleration', 'orientation', 'energy'];
- * 
+ *
  * input
  *  .init(requiredEvents)
  *  .then((modules) => {
@@ -22738,7 +22738,7 @@ JSONPPolling.prototype.doPoll = function () {
   this.script = script;
 
   var isUAgecko = 'undefined' != typeof navigator && /gecko/i.test(navigator.userAgent);
-  
+
   if (isUAgecko) {
     setTimeout(function () {
       var iframe = document.createElement('iframe');
@@ -33956,7 +33956,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 // import client side soundworks and player experience
 
 
-var files = ['sounds/audio.mp3'];
+var files = ['cc/sounds/audio.mp3'];
 
 var firstPageContent = {
   'service:platform': {
